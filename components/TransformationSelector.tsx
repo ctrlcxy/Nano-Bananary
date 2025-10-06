@@ -90,7 +90,7 @@ const TransformationSelector: React.FC<TransformationSelectorProps> = ({
     <div className="container mx-auto p-4 md:p-8 animate-fade-in">
       {!activeCategory ? (
         <>
-          <h2 className="text-3xl font-bold text-center mb-4 text-[var(--accent-primary)]">{t('transformationSelector.title')}</h2>
+          <h2 className="text-3xl font-bold text-center mb-4 text-[#FFA500]">{t('transformationSelector.title')}</h2>
           <p className="text-lg text-center text-[var(--text-secondary)] mb-8 max-w-2xl mx-auto">
             {hasPreviousResult 
               ? t('transformationSelector.descriptionWithResult')
@@ -111,7 +111,7 @@ const TransformationSelector: React.FC<TransformationSelectorProps> = ({
               </svg>
               {t('app.back')}
             </button>
-            <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[var(--accent-primary)] to-[var(--accent-secondary)] flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[#FFA500] flex items-center gap-3">
               <span className="text-4xl">{activeCategory.emoji}</span>
               {t(activeCategory.titleKey)}
             </h2>

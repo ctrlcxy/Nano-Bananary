@@ -436,8 +436,8 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)] font-sans">
       <header className="bg-[var(--bg-card-alpha)] backdrop-blur-lg sticky top-0 z-20 p-4 border-b border-[var(--border-primary)]">
         <div className="container mx-auto flex justify-between items-center">
-          <h1 
-            className="text-2xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[var(--accent-primary)] to-[var(--accent-secondary)] cursor-pointer" 
+          <h1
+            className="text-2xl font-bold tracking-tight text-[#FFA500] cursor-pointer"
             onClick={handleResetApp}
           >
             {t('app.title')}
