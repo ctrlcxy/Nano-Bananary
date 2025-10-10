@@ -23,6 +23,19 @@ export const dataUrlToFile = async (dataUrl: string, filename: string): Promise<
     return new File([blob], filename, { type: blob.type });
 };
 
+export const urlToDataUrl = async (url: string): Promise<string> => {
+    if (url.startsWith('data:')) return url;
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`Failed to fetch image: ${response.statusText}`);
+    const blob = await response.blob();
+    return await new Promise<string>((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result as string);
+        reader.onerror = reject;
+        reader.readAsDataURL(blob);
+    });
+};
+
 /**
  * Loads an image from a data URL.
  * @param dataUrl The data URL of the image.

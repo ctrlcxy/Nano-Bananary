@@ -20,9 +20,6 @@ export default {
         step2: "第2步：应用调色板...",
         default: "正在生成您的杰作...",
         wait: "这有时可能需要一些时间。",
-        videoInit: "正在初始化视频生成...",
-        videoPolling: "正在处理视频，这可能需要几分钟...",
-        videoFetching: "正在完成并获取您的视频...",
     },
     theme: {
         switchToLight: "切换到浅色主题",
@@ -87,14 +84,6 @@ export default {
       tools: { title: "创意工具" },
       effects: { title: "50+ 艺术效果" },
     },
-    video: {
-      title: "视频生成",
-      description: "通过文本提示和可选图像创建短视频。选择您想要的宽高比。",
-      promptPlaceholder: "例如：一只雄伟的狮子在日落时分的岩石上咆哮",
-      aspectRatio: "宽高比",
-      landscape: "16:9 横向",
-      portrait: "9:16 纵向"
-    },
     effects: {
       customPrompt: { 
         title: "自定义提示", 
@@ -103,6 +92,14 @@ export default {
         uploader1Desc: "要编辑的主要图像。",
         uploader2Title: "参考图像（可选）",
         uploader2Desc: "用于风格、内容或上下文的第二张图像。" 
+      },
+      promptOnly: { 
+        title: "纯提示词生成", 
+        description: "只需输入文本提示即可生成全新的图像，不需要上传参考图。",
+        instructions: "输入尽量具体的提示词，点击生成，我们会直接为你创建新图像。",
+        placeholder: "例如：赛博朋克风格的探险家站在霓虹雨夜的城市街头",
+        editHint: "生成图像后，可用下方蒙版配合新的提示词进行局部调整。",
+        generateFirst: "先生成图像即可启用蒙版编辑，然后使用蒙版配合提示词继续修改。"
       },
       figurine: { title: "3D手办", description: "将您的照片变成一个可收藏的3D角色手办，并配有包装。" },
       funko: { title: "Funko Pop公仔", description: "将您的主题重塑为一个可爱的Funko Pop！乙烯基公仔，放在盒子里。" },

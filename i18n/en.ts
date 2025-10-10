@@ -20,9 +20,6 @@ export default {
       step2: "Step 2: Applying color palette...",
       default: "Generating your masterpiece...",
       wait: "This can sometimes take a moment.",
-      videoInit: "Initializing video generation...",
-      videoPolling: "Processing video, this may take a few minutes...",
-      videoFetching: "Finalizing and fetching your video...",
     },
     theme: {
         switchToLight: "Switch to light theme",
@@ -87,14 +84,6 @@ export default {
       tools: { title: "Creative Tools" },
       effects: { title: "50+ Artistic Effects" },
     },
-    video: {
-      title: "Video Generation",
-      description: "Create a short video from a text prompt and an optional image. Choose your desired aspect ratio.",
-      promptPlaceholder: "e.g., A majestic lion roaring on a rocky outcrop at sunset",
-      aspectRatio: "Aspect Ratio",
-      landscape: "16:9 Landscape",
-      portrait: "9:16 Portrait"
-    },
     effects: {
       customPrompt: { 
         title: "Custom Prompt", 
@@ -103,6 +92,14 @@ export default {
         uploader1Desc: "The main image to edit.",
         uploader2Title: "Reference Image (Optional)",
         uploader2Desc: "A second image for style, content, or context." 
+      },
+      promptOnly: { 
+        title: "Prompt to Image", 
+        description: "Generate a brand-new image directly from your text prompt—no reference upload required.",
+        instructions: "Enter a descriptive prompt, pick Generate, and we will create a fresh image for you.",
+        placeholder: "e.g., Cinematic portrait of a cyberpunk explorer under neon rain",
+        editHint: "After generating, apply masks to focus your next prompt on specific regions.",
+        generateFirst: "Generate an image first to unlock mask editing, then refine with the mask tool."
       },
       figurine: { title: "3D Figurine", description: "Turns your photo into a collectible 3D character figurine, complete with packaging." },
       funko: { title: "Funko Pop Figure", description: "Reimagines your subject as an adorable Funko Pop! vinyl figure in its box." },
